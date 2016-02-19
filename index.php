@@ -23,10 +23,10 @@ $database = getenv("MYSQL_DATABASE");
 $username = getenv("MYSQL_USER");
 $password = getenv("MYSQL_PASSWORD");
 
-echo "vars:";
+echo "vars: ";
 echo "<br>";
-echo "MYSQL_SERVICE_HOST = ", $host, " MYSQL_SERVICE_PORT = " , $post, " MYSQL_USER = ", $username;
-echo "MYSQL_PASSWORD = ", $password, " MYSQL_DATABASE = " , $database;
+echo " MYSQL_SERVICE_HOST = ", $host, " MYSQL_SERVICE_PORT = " , $port, " MYSQL_USER = ", $username;
+echo " MYSQL_PASSWORD = ", $password, " MYSQL_DATABASE = " , $database;
 echo "<br>";
 
 $conn = mysqli_connect($host, $username, $password, $database, $port);
