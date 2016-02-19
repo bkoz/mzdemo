@@ -27,6 +27,7 @@ echo "Environment variables: ";
 echo "<br> MYSQL_SERVICE_HOST = ", $host, "<br> MYSQL_SERVICE_PORT = " , $port, "<br> MYSQL_USER = ", $username;
 echo "<br> MYSQL_PASSWORD = ", $password, "<br> MYSQL_DATABASE = " , $database;
 echo "<br>";
+echo "<br>";
 
 $conn = mysqli_connect($host, $username, $password, $database, $port);
 if ($conn) {
