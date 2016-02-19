@@ -23,9 +23,8 @@ $database = getenv("MYSQL_DATABASE");
 $username = getenv("MYSQL_USER");
 $password = getenv("MYSQL_PASSWORD");
 
-echo "vars: ";
-echo "<br>";
-echo " MYSQL_SERVICE_HOST = ", $host, "<br> MYSQL_SERVICE_PORT = " , $port, "<br> MYSQL_USER = ", $username;
+echo "Environment variables: ";
+echo "<br> MYSQL_SERVICE_HOST = ", $host, "<br> MYSQL_SERVICE_PORT = " , $port, "<br> MYSQL_USER = ", $username;
 echo "<br> MYSQL_PASSWORD = ", $password, "<br> MYSQL_DATABASE = " , $database;
 echo "<br>";
 
