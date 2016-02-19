@@ -13,7 +13,7 @@
   </style>
  </head>
  <body>
- <h1>Hello OpenShift!!!! HURRAY!</h1>
+ <h1>Hello OpenShift!</h1>
 <?php
 error_reporting(E_ERROR);
 
@@ -22,6 +22,11 @@ $port = getenv("MYSQL_SERVICE_PORT");
 $database = getenv("MYSQL_SERVICE_DATABASE");
 $username = getenv("MYSQL_SERVICE_USERNAME");
 $password = getenv("MYSQL_SERVICE_PASSWORD");
+
+echo "vars:";
+echo "<br>";
+echo $host, " " , $post, " ", $username;
+echo "<br>";
 
 $conn = mysqli_connect($host, $username, $password, $database, $port);
 if ($conn) {
