@@ -25,7 +25,8 @@ $password = getenv("MYSQL_PASSWORD");
 
 echo "vars:";
 echo "<br>";
-echo $host, " " , $post, " ", $username;
+echo "MYSQL_SERVICE_HOST = ", $host, " MYSQL_SERVICE_PORT = " , $post, " MYSQL_USER = ", $username;
+echo "MYSQL_PASSWORD = ", $password, " MYSQL_DATABASE = " , $database;
 echo "<br>";
 
 $conn = mysqli_connect($host, $username, $password, $database, $port);
