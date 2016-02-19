@@ -19,9 +19,9 @@ error_reporting(E_ERROR);
 
 $host = getenv("MYSQL_SERVICE_HOST");
 $port = getenv("MYSQL_SERVICE_PORT");
-$database = getenv("MYSQL_SERVICE_DATABASE");
-$username = getenv("MYSQL_SERVICE_USERNAME");
-$password = getenv("MYSQL_SERVICE_PASSWORD");
+$database = getenv("MYSQL_DATABASE");
+$username = getenv("MYSQL_USER");
+$password = getenv("MYSQL_PASSWORD");
 
 echo "vars:";
 echo "<br>";
