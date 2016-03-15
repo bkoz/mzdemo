@@ -11,11 +11,12 @@ Choose php:5.6 builder image
 Set name = mydemo
 Set git url = https://github.com/bkoz/mzdemo.git
 
+# From the web console, we'll add a mysql-ephemeral pod and let it build and deploy.
+
 Copy the generic web hook url from the build config and add it to the github repo settings.
 
 Now that the app is built and running, we'll make a src change.
 
-Add a mysql-ephemeral pod
 
 $ oc env dc mydemo (The app should pickup the kube env vars such as MYSQL_SERVICE_HOST, MYSQL_SERVICE_PORT
 
