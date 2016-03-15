@@ -1,10 +1,14 @@
 # mzdemo
 
+```
 git clone https://github.com/bkoz/mzdemo.git
+cd mzdemo
+```
 
+```
 oc login
-
 oc new-project mydemo
+```
 
 Choose php:5.6 builder image
 
@@ -19,18 +23,28 @@ Now that the app is built and running, we'll make a src change.
 
 Redeploying the app will cause the kube env vars such as MYSQL_SERVICE_HOST, MYSQL_SERVICE_PORT to appear.
 
+```
 $ oc deploy mydemo --latest (or use the web console)
+```
 
+```
 $ oc env dc mysql --list
+```
 
+```
 $ oc env dc mydemo MYSQL_USER=user MYSQL_PASSWORD=password MYSQL_DATABASE=sampledb
+```
 
 After pod is redeployed, fresh the web browser.
 
 Scale out the front end from the web console.
 
+```
 $ oc get pods -o wide -w
+```
 
+```
 $ for i in `seq 1 10`; do curl http://mydemo-mydemo.apps.haveopen.com; done
+```
 
 
